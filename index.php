@@ -8,7 +8,7 @@ date_default_timezone_set('Europe/Moscow');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="../../bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
     <title>TimerCreator</title>
     <style>
         #testBlock {
@@ -74,9 +74,9 @@ date_default_timezone_set('Europe/Moscow');
 </div>
 
 <!-- Bootstrap -->
-<script src="../../bootstrap-4.5.3-dist/js/jquery-3.5.1.min.js"></script>
-<script src="../../bootstrap-4.5.3-dist/js/popper.min.js"></script>
-<script src="../../bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<script src="bootstrap-4.5.3-dist/js/jquery-3.5.1.min.js"></script>
+<script src="bootstrap-4.5.3-dist/js/popper.min.js"></script>
+<script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
 
 <!-- Moment.js -->
 <script src="moment-with-locales.min.js"></script>

@@ -55,13 +55,18 @@ document.addEventListener('DOMContentLoaded', () => {
         setInterval(CALCULATE_DIFF, 1000);
     });
 
-
+    /** Проверка формы на валидность */
     (function () {
         'use strict';
         window.addEventListener('load', function () {
             let forms = document.getElementsByClassName('needs-validation');
             Array.prototype.filter.call(forms, function (form) {
                 form.addEventListener('submit', function (event) {
+
+                    /**
+                     * Если форма не прошла валидацию, отображаем подскази,
+                     * иначе отправляем данные на обработчик средствами AJAX
+                     */
                     if (form.checkValidity() === false) {
                         event.preventDefault();
                         event.stopPropagation();
@@ -98,10 +103,12 @@ document.addEventListener('DOMContentLoaded', () => {
                                         </div>
                                     `;
 
+                                    /** Асинхронное добавление HTML-кода модального окна в DOM */
                                     async function putHTML() {
                                         MODAL_DIV.insertAdjacentHTML('beforeend', MODAL_HTML);
                                     }
 
+                                    /** Отображение модального окна после вставки HTML */
                                     putHTML().then(() => {
                                         const SUCCESS_MODAL = $('#successModal');
                                         SUCCESS_MODAL.modal('show');
